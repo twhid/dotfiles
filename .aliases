@@ -13,11 +13,17 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
-alias m="mate ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
 alias bb="bbedit"
+alias psn="ps -e|grep node"
+alias .com="cd ~/projects/1stdibs.com/dibs"
+alias v1="cd ~/projects/1stdibs-admin-v1"
+alias v2="cd ~/projects/1stdibs-admin-v2"
+alias dibslibs="cd ~/projects/dibslibs"
+alias bunsen="cd ~/projects/node_modules/bunsen"
+alias static="cd ~/projects/1stdibs.com-static"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -138,6 +144,12 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Launch Screensaver
+alias lock="open -a /System/Library/Frameworks/ScreenSaver.framework//Versions/A/Resources/ScreenSaverEngine.app"
+
+# Launch iOS Simulator
+alias ios="open -a /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
