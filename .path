@@ -1,0 +1,20 @@
+# PATH ADDITIONS
+# original git /usr/local/git/bin
+# homebrew git /usr/local/bin/git
+export PATH=":$PATH:~/bin:/usr/local:/usr/local/bin"
+
+# Ruby Gems
+export PATH=":$PATH:~/.gem/ruby/1.8/bin"
+
+# NPM globals
+export PATH=":$PATH:/usr/local/share/npm/bin"
+
+# composer packages
+export PATH=":$PATH:~/.composer/vendor/bin"
+
+# PEAR packages
+export PATh=":$PATH:/usr/local/pear/bin"
+
+# phabricator's arcanist binary
+export PATH=":$PATH:~/projects/arcanist/bin"
+

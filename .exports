@@ -21,6 +21,14 @@ export MANPAGER='less -X';
 export GREP_OPTIONS='--color=auto';
 
 # NVM added this line to .bashrc
-export NVM_DIR="/Users/timwhidden/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export SELENIUM_JAR=/usr/local/bin/selenium-server-standalone.jar
+
+export COMPOSER_HOME=~/.composer
+
+# JAVA
+export JAVA_HOME=/Library/Java/Home
+export CATALINA_HOME=/usr/local/Tomcat/Home
 
