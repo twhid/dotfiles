@@ -157,4 +157,4 @@ alias reload="exec $SHELL -l"
 # Docker aliases
 alias dockerrm="docker ps -q -a | xargs docker rm"
 
-alias dockerrmi="docker rmi $(docker images -q -f dangling=true)"
+alias dockerrmi="docker images -q -f dangling=true | xargs docker rmi"
