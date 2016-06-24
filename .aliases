@@ -18,12 +18,6 @@ alias o="open"
 alias oo="open ."
 alias bb="bbedit"
 alias psn="ps -e|grep node"
-alias .com="cd ~/projects/1stdibs.com/dibs"
-alias v1="cd ~/projects/1stdibs-admin-v1"
-alias v2="cd ~/projects/1stdibs-admin-v2"
-alias dibslibs="cd ~/projects/dibslibs"
-alias bunsen="cd ~/projects/node_modules/bunsen"
-alias static="cd ~/projects/1stdibs.com-static"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
