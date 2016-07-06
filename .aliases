@@ -148,6 +148,7 @@ alias ios="open -a /Applications/Xcode.app/Contents/Developer/Applications/Simul
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Docker aliases
+# Docker stuff
 alias dockerrm="docker ps -q -a | xargs docker rm"
 alias dockerrmi="docker images -q -f dangling=true | xargs docker rmi"
+alias dockervm="screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty"
