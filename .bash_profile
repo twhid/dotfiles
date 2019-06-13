@@ -31,8 +31,12 @@ done;
   fi
 
 # Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-	complete -o default -o nospace -F _git g;
+if type _git &> /dev/null && [ -f ~/.git-completion.bash ]; then
+  complete -o default -o nospace -F _git g;
+fi;
+
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
 fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
@@ -46,4 +50,4 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # up the ulimit for webpack dev server
-ulimit -S -n 2048
+ulimit -S -n 2048;

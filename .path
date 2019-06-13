@@ -18,3 +18,9 @@ export PATh=":$PATH:/usr/local/pear/bin"
 # phabricator's arcanist binary
 export PATH=":$PATH:~/projects/arcanist/bin"
 
+# YARN
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# RUST
+export PATH="$HOME/.cargo/bin:$PATH"
+
